@@ -1,4 +1,4 @@
-первая
+#первая
 input_data = input("введите карты, их кол-во и номиналы:")
 data = list(map(int, input_data.split()))
 
@@ -14,7 +14,7 @@ vo = k - ku
 print(vo)
 
 ##
-вторая
+#вторая
 def tunis(s):
 
     polis = [s[i:i+2] for i in range(0, len(s), 2)]
@@ -28,12 +28,7 @@ ote = tunis(s)
 print(ote)
 
 ##
-третья
-
-что...
-
-##
-четвертая
+#четвертая
 
 def istambul(s):
     polis = list(s)
@@ -49,14 +44,14 @@ ote = istambul(s)
 print(ote)
 
 ##
-пятая
+#пятая
 
 iu = input("введите цифры через побел: ").split()
 iu = [iu[-1]] + iu[:-1]
 print(iu)
 
 ##
-шестая
+#шестая
 
 def klop(k):
     wolf = {}
