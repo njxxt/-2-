@@ -1,0 +1,27 @@
+def mnk():
+    zx = input('Введите знач х через запятые: ')
+    zy = input('Введите знач у через запятые: ')
+
+    x = list(map(float, zx.split(',')))
+    y = list(map(float, zy.split(',')))
+
+    if len(x) != len(y):
+        print('Введите одинак колво измерений')
+        return
+
+    n = len(x)
+    forx= sum(x)
+    fory = sum(y)
+
+    forXY = sum(x[i] * y[i] for i in range(n))
+    kvadrad = sum(xi ** 2 for xi in x)
+    if (n*kvadrad - forx**2) == 0:
+        print('Вы провели недостаточно измерений')
+    else:
+        a = (n * forXY - forx*fory) / (n*kvadrad - forx**2)
+
+
+        b = (fory - a * forx)/n
+
+        print(a, b)
+mnk()

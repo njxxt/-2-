@@ -1,0 +1,10 @@
+def prost(x):
+    print(1, x)
+    for y in range(2, 10):
+        if x % y == 0:
+            print(y)
+    if y==1:
+        print(x)
+
+x = int(input("Введите число: "))
+prost(x)

@@ -1,0 +1,9 @@
+print ('Hello, world!')
+def treg(x):
+    for y in range(1, x+1):
+        print('C'*y)
+    for z in range(1, x+1):
+        print('C'*(x-z))
+
+x = int(input())
+treg(x)

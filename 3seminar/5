@@ -1,0 +1,39 @@
+print('введите колво строк и столбцов')
+n = int(input())
+m = int(input())
+def etomat(n, m):
+    mat = [[0] * m for _ in range(n)]
+    left, right =0, m - 1
+    ceil, floor =0, n - 1
+    l = 1
+
+    while left <= right and ceil <= floor:
+        for i in range(left, right + 1):
+            mat[ceil][i] = l
+
+            l += 1
+        ceil += 1
+
+        for i in range(ceil, floor + 1):
+            mat[i][right] = l
+            l += 1
+        right -= 1
+
+        if ceil <= floor:
+            for i in range(right, left - 1, -1):
+                mat[floor][i] = l
+                l += 1
+            floor -= 1
+
+        if left <= right:
+            for i in range(floor, ceil - 1, -1):
+                mat[i][left] = l
+                l += 1
+            left += 1
+
+    return mat
+
+mat = etomat(n, m)
+
+for enter in mat:
+    print(enter)
