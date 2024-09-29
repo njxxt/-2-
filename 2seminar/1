@@ -1,0 +1,13 @@
+input_data = input("введите карты, их кол-во и номиналы:")
+data = list(map(int, input_data.split()))
+
+n = data[0]
+aaa = data[1:]
+
+k = n*(n+1) // 2
+
+ku = sum(aaa)
+
+vo = k - ku
+
+print(vo)

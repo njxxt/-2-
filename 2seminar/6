@@ -1,0 +1,16 @@
+def klop(k): wolf = {}
+
+for cif in k:
+    if cif in wolf:
+        wolf[cif] += 1
+    else:
+        wolf[cif] = 1
+
+vespo = [cif for cif in k if wolf[cif] == 1]
+
+return vespo
+user = input("введите цифры через пробел: ") cif = user.split()
+
+res = klop(cif)
+
+print(res)

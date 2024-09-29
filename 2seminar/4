@@ -1,0 +1,10 @@
+def istambul(s):
+    polis = list(s)
+
+for i in range(0, len(polis) - 1, 2):
+    polis[i], polis[i + 1] = polis[i + 1], polis[i]
+    ote = ''.join(polis)
+return ote
+s = input("Введите строку: ")
+
+ote = istambul(s) print(ote)

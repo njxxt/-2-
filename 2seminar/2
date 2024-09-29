@@ -1,0 +1,9 @@
+def tunis(s):
+
+polis = [s[i:i+2] for i in range(0, len(s), 2)]
+kupol = [pair[::-1] for pair in reversed(polis)]
+ote = ''.join(kupol)
+return ote
+s = input("введите строку: ")
+
+ote = tunis(s) print(ote)
