@@ -1,9 +1,0 @@
-import matplotlib.pyplot as plt
-
-x = list(map(int, input().split()))
-y = list(map(int, input().split()))
-
-plt.legend()
-
-plt.plot(x, y)
-plt.show()
