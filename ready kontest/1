@@ -1,0 +1,19 @@
+def exp():
+    student = input()
+    import re
+    found = r'(student_(\d{3}))(\d+)'
+    matches = re.findall(found, student)
+
+    maxans = -1
+    mit = []
+
+    for student, num, score in matches:
+        score = int(score)
+        if score > maxans:
+            maxans = score
+            mit = [num]
+        elif score == maxans:
+            mit.append(num)
+    print('-'.join(mit))
+
+exp()

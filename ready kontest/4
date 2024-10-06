@@ -1,0 +1,15 @@
+def main():
+    str = input("Введите строку: ")
+
+    if len(str) < 4:
+        if str.isupper():
+            print(str.upper())
+        else:
+            print(str)
+    else:
+        upper = sum(1 for c in str[:4] if c.isupper())
+        if upper >= 3:
+            print(str.upper())
+        else:
+            print(str)
+main()

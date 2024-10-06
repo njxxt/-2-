@@ -1,0 +1,7 @@
+def reverse():
+    str1, str2 = input("Введите две строки: ").split()
+    first = str1[:2][::-1] + str1[2:]
+    result = f"{first}-{str2}"
+    print(result)
+
+reverse()
