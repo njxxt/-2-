@@ -30,7 +30,7 @@ key = "эьормщднйгычясюцажшбтпвёлеъзхкфи"
      # абвгдеёжзийклмнопрстуфхцчшщыьэюя
 cipher = Monoalphabet(key)
 
-print("Введите текст для расшифровки:")
+print("Введите:")
 input_text = input()
 encoded_text = cipher.decode(input_text)
 
