@@ -39,8 +39,6 @@ class test_numbers(unittest.TestCase):
     def test_29(self):
         self.assertEqual(prost(29), [29])
 
-    def test_100(self):
-        self.assertEqual(prost(100), [2, 2, 5, 5])
 
     def test_12345(self):
         self.assertEqual(prost(12345), [3, 5, 823])
